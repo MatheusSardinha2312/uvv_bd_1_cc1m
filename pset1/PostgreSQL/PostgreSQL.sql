@@ -237,10 +237,6 @@ VALUES
 ('12345678966', 'Alicia', 'F', '1988-12-30', 'Filha'),
 ('12345678966', 'Elizabeth', 'F', '1967-05-05', 'Esposa');
 
-/* Modificação do decimal(3,1) not null para o char(4) null do atributo horas da tabela trabalha_em */
-ALTER TABLE elmasri.trabalha_em 
-MODIFY horas DECIMAL(3,1) NULL;
-
 /* Adição de valores dentro da tabela trabalha_em */
 INSERT INTO elmasri.trabalha_em ( 
 cpf_funcionario, numero_projeto, horas
@@ -261,4 +257,4 @@ VALUES
 ('98798798733', 30, '5.0'),
 ('98765432168', 30, '20.0'),
 ('98765432168', 20, '15.0'),
-('88866555576', 20, '0');
+('88866555576', 20, '0.0');
