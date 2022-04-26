@@ -288,7 +288,7 @@ VALUES
 ('12345678966', 'Alicia', 'F', '1988-12-30', 'Filha'),
 ('12345678966', 'Elizabeth', 'F', '1967-05-05', 'Esposa');
 
-/* Modificação do decimal(3,1) not null para o decimal(3,1) do atributo horas da tabela trabalha_em */
+/* Modificação do decimal(3,1) not null para o decimal(3,1) null do atributo horas da tabela trabalha_em */
 ALTER TABLE trabalha_em 
 MODIFY horas DECIMAL(3,1) NULL;
 
