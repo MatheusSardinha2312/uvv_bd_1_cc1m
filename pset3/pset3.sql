@@ -1,5 +1,4 @@
-WITH RECURSIVE classificacao_p
-AS (SELECT codigo, CONCAT(nome) AS nome, codigo_pai
+WITH RECURSIVE classificacao_p AS ( SELECT codigo, CONCAT(nome) AS nome, codigo_pai
 FROM classificacao
 WHERE codigo_pai is null
 
